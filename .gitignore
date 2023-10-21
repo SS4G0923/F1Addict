@@ -9,4 +9,5 @@
 /src/F1AddictFrontend/package-lock.json
 /src/F1AddictFrontend/README.md
 /src/F1AddictFrontend/vite.config.js
+.DS_Store
 
