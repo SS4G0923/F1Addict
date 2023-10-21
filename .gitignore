@@ -4,3 +4,9 @@
 /HELP.md
 /mvnw
 /mvnw.cmd
+/src/F1AddictFrontend/node_modules
+/src/F1AddictFrontend/public
+/src/F1AddictFrontend/package-lock.json
+/src/F1AddictFrontend/README.md
+/src/F1AddictFrontend/vite.config.js
+
