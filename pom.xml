@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.f1addict</groupId>
-    <artifactId>F1Addict</artifactId>
+    <artifactId>F1AddictBackend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>F1AddictBackend</name>
     <description>F1AddictBackend</description>
