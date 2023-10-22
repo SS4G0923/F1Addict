@@ -34,6 +34,7 @@
     onMounted(() => {
         document.querySelector(".should-be-selected").selected = true;
     })
+    document.title = 'F1Addict - Signup';
 </script>
 
 <template>
@@ -46,7 +47,7 @@
                         <h1>Sign up</h1>
                     </div>
                     <div class="loginFormInput" style="display: flex;">
-                        <input type="text" name="email" placeholder="E-mail Address" v-model="email" required style="border-radius: 15px 0px 0px 15px; border-right: 0px; width: 80%;">
+                        <input type="text" name="email" placeholder="E-mail Address" autocomplete="off" v-model="email" required style="border-radius: 15px 0px 0px 15px; border-right: 0px; width: 80%;">
                         <select name="emailDomain" v-model="emailDomain" autocomplete="off">
                             <option value="" disabled class="should-be-selected">Select Domain</option>
                             <option value="@gmail.com">@gmail.com</option>
@@ -56,10 +57,10 @@
                         </select>
                     </div>
                     <div class="loginFormInput">
-                        <input type="text" name="username" placeholder="Username" v-model="username" required>
+                        <input type="text" name="username" placeholder="Username" autocomplete="off" v-model="username" required>
                     </div>
                     <div class="loginFormInput">
-                        <input type="password" name="password" placeholder="Password" v-model="password" required>
+                        <input type="password" name="password" placeholder="Password" autocomplete="off" v-model="password" required>
                     </div>
                     <div class="submitButton">
                         <input type="button" value="Sign up" @click="signup(email, emailDomain, username, password)">

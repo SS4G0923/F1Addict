@@ -34,7 +34,7 @@
         teams.value = res.data.data;
     }
     getTeams();
-
+    document.title = 'F1Addict - Teams';
 </script>
 
 <template>

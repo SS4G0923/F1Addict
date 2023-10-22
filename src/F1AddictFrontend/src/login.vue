@@ -29,6 +29,7 @@
             return;
         }
     }
+    document.title = 'F1Addict - Login';
 </script>
 
 <template>

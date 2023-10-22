@@ -13,6 +13,7 @@
     }
     const baseURL = 'http://localhost:8080/F1AddictResource';
     getDrivers();
+    document.title = 'F1Addict - Drivers';
 </script>
 
 <template>
