@@ -4,6 +4,7 @@ import drivers from '../drivers.vue'
 import teams from '../teams.vue'
 import login from '../login.vue'
 import signup from '../signup.vue'
+import F1TV from '../F1TV.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -40,6 +41,11 @@ const router = createRouter({
             path: "/signup",
             name: "signup",
             component: signup,
+        },
+        {
+            path: "/f1tv",
+            name: "f1tv",
+            component: F1TV,
         }
     ]
     })

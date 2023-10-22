@@ -27,7 +27,7 @@
                 <li><a href="#" target="_blank" class="scheduleTag" id="1" style="color: white;" @mouseover="scheduleDetailStore.toTrue">Schedule</a></li>
                 <li><a href="/drivers" target="_blank" id="2" class="driversTag" style="color: white;">Drivers</a></li>
                 <li><a href="/teams" target="_blank" id="3" class="constructorsTag" style="color: white;">Constructors</a></li>
-                <li><a href="https://f1tv.formula1.com/" target="_blank" style="color: white;">F1 TV</a></li>
+                <li><a href="/f1tv" target="_blank" style="color: white;">F1 TV</a></li>
             </ul>
         </div>
         <div name="user" v-show="isShow">
