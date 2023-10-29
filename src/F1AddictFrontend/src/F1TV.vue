@@ -55,9 +55,9 @@
             <div class="playerBlock">
                 <div class="titleBox">
                     <div>
-                        <button type="button" class="playerButton">
+                        <div class="playerButton">
                             <svg width="30" height="30" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
-                        </button>
+                        </div>
                     </div>
                     <div class="boxRight">
                         <div class="videoTitle">
@@ -185,7 +185,7 @@
                 <div class="raceList">
                     <div class="listName">
                         <div class="listNameLeft">  
-                            <p>2023 United States Grand Prix</p>
+                            <p>Continue Watching</p>
                             <div class="listNameSvg">
                                 <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
                             </div>
@@ -203,7 +203,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>2023 United States Grand Prix</p>
+                                    <p>2022 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -220,7 +220,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>Race Highlights - USA</p>
+                                    <p>2021 Abu Dhabi Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -329,6 +329,40 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="raceList">
+                    <div class="listName">
+                        <div class="listNameLeft">
+                            <p>Documentaries</p>
+                            <div class="listNameSvg">
+                                <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                            </div>
+                        </div>
+                        <p>View All</p>
+                    </div>
+                    <div class="videoCards">
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/Documentaries1.jpeg" alt="" style="width: 95%;">
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/Documentaries2.jpeg" alt="" style="width: 95%;">
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/Documentaries3.jpeg" alt="" style="width: 95%;">
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/Documentaries4.jpeg" alt="" style="width: 95%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -416,7 +450,7 @@
 
     .playerWrapper {
         position: relative;
-        z-index: -1;
+        z-index: 0;
         width: 100%;
     }
     
@@ -455,6 +489,8 @@
     }
 
     .playerButton {
+        position: relative;
+        z-index: 10;
         margin-left: -10%;
         width: 70px;
         height: 70px;
@@ -464,14 +500,16 @@
         opacity: 0.5;
     }
 
+    .playerButton svg {
+        fill: white;
+        margin-left: 30%;
+        margin-top: 28%;
+    }
+    
     .playerButton:hover {
         opacity: 1;
         transition: all 0.3s;
-    }
-
-    .playerButton svg {
-        opacity: 1;
-        fill: white;
+        background-color: red;
     }
 
     .boxRight {
@@ -484,6 +522,7 @@
         display: flex;
         margin-top: 10px;
     }
+
     .videoInfo div {
         display: flex;
         font-size: 10px;
@@ -516,7 +555,8 @@
     }
 
     .mainContent {
-        height: 2000px;
+        position: relative;
+        height: 2100px;
         background-color: #15151E;
     }
 
