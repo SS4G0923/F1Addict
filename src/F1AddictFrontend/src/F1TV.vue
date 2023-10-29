@@ -101,9 +101,11 @@
 
                 <div class="raceList">
                     <div class="listName">
-                        <p>2023 United States Grand Prix</p>
-                        <div style="margin-right: 670px; margin-bottom: -2px;">
-                        <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                        <div class="listNameLeft">
+                            <p>2023 United States Grand Prix</p>
+                            <div class="listNameSvg">
+                                <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                            </div>
                         </div>
                         <p>View All</p>
                     </div>
@@ -182,9 +184,11 @@
 
                 <div class="raceList">
                     <div class="listName">
-                        <p>2023 United States Grand Prix</p>
-                        <div style="margin-right: 670px; margin-bottom: -2px;">
-                        <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                        <div class="listNameLeft">  
+                            <p>2023 United States Grand Prix</p>
+                            <div class="listNameSvg">
+                                <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                            </div>
                         </div>
                         <p>View All</p>
                     </div>
@@ -263,9 +267,11 @@
 
                 <div class="raceList">
                     <div class="listName">
-                        <p>2023 United States Grand Prix</p>
-                        <div style="margin-right: 670px; margin-bottom: -2px;">
-                        <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                        <div class="listNameLeft">
+                            <p>Tech Talk</p>
+                            <div class="listNameSvg">
+                                <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                            </div>
                         </div>
                         <p>View All</p>
                     </div>
@@ -584,6 +590,16 @@
     .listName p:nth-last-child(1) {
         font-weight: lighter;
         font-size: medium;
+    }
+
+    .listNameLeft {
+        display: flex;
+    }
+
+    .listNameSvg {
+        display: block;
+        margin-left: 10px;
+        padding-top: 2px;
     }
 
     .videoCards {
