@@ -195,7 +195,7 @@
                     <div class="videoCards">
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/Race.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/RaceMex.jpeg" alt="">
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -203,7 +203,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>2022 United States Grand Prix</p>
+                                    <p>2023 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -212,7 +212,7 @@
                         </div>
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/RaceHighlights.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/RaceIn30Mex.jpeg" alt="">
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -220,7 +220,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>2021 Abu Dhabi Grand Prix</p>
+                                    <p>RACE IN 30 - Mexico City</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -229,7 +229,7 @@
                         </div>
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/PostRaceShow.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/QualiMex.jpeg" alt="">
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -237,7 +237,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>Post-Race Show - USA</p>
+                                    <p>2023 Mexico City GP - Qualifying</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -246,7 +246,7 @@
                         </div>
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/PreRaceShow.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/RaceMex22.jpeg" alt="">
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -254,7 +254,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>Pre-Race Show - USA</p>
+                                    <p>2022 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -385,7 +385,7 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>2022 United States Grand Prix</p>
+                                    <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
 
@@ -394,7 +394,24 @@
                         </div>
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/RaceHighlights.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/RaceMex22.jpeg" alt="">
+                            </div>
+                            <div class="videoTitleBox">
+                                <div class="videoTitleInfo">
+                                    <div class="timeDuration">02:09:28</div>
+                                    <div>REPLAY</div>
+                                </div>
+                                <div class="videoName">
+                                    <p>2022 Mexico City Grand Prix</p>
+                                </div>
+                                <div class="videoFeature">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/RaceAbuDhabi21.jpeg" alt="">
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -411,7 +428,7 @@
                         </div>
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/PostRaceShow.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/RaceMex21.jpeg" alt="">
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -419,28 +436,46 @@
                                     <div>REPLAY</div>
                                 </div>
                                 <div class="videoName">
-                                    <p>Post-Race Show - USA</p>
+                                    <p>2021 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
 
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="videoCards" style="margin-top: 50px;">
                         <div class="videoCard">
                             <div class="videoCover">
-                                <img src="./rescources/images/F1TV/videoList/PreRaceShow.jpeg" alt="">
+                                <img src="./rescources/images/F1TV/videoList/F2.jpeg" alt="">
                             </div>
-                            <div class="videoTitleBox">
-                                <div class="videoTitleInfo">
-                                    <div class="timeDuration">02:09:28</div>
-                                    <div>REPLAY</div>
-                                </div>
-                                <div class="videoName">
-                                    <p>Pre-Race Show - USA</p>
-                                </div>
-                                <div class="videoFeature">
-
-                                </div>
+                            <div class="lastTitle">
+                                <p>FORMULA 2</p>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/F3.jpeg" alt="">
+                            </div>
+                            <div class="lastTitle">
+                                <p>FORMULA 3</p>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/FA.jpeg" alt="">
+                            </div>
+                            <div class="lastTitle">
+                                <p>F1 ACADEMY</p>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/SC.jpeg" alt="">
+                            </div>
+                            <div class="lastTitle">
+                                <p>SUPERCUP</p>
                             </div>
                         </div>
                     </div>
@@ -771,5 +806,23 @@
         height: 130px;
         border-radius: 0px 0px 20px 20px;
         padding-left: 10px;
+    }
+
+    .lastTitle {
+        background-color: #212127;
+        width: 95%;
+        height: 130px;
+        border-radius: 0px 0px 20px 20px;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: large;
+        padding-top: 50px;
+        padding-left: 25%;
+    }
+
+    .lastTitle:hover {
+        background-color: white;
+        color: black;
+        transition: all 0.3s;
     }
 </style>
