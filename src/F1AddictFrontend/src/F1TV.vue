@@ -363,6 +363,88 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="raceList">
+                    <div class="listName">
+                        <div class="listNameLeft">  
+                            <p>Popular Races From The Archive</p>
+                            <div class="listNameSvg">
+                                <svg width="20" height="20" viewBox="0 0 10 20"><defs><path id="title_chevron_svg__a" d="M10 10c0 .802-.329 1.568-.91 2.12l-7.33 7.05-1.47-1.42 7.33-7a.997.997 0 000-1.42l-7.33-7L1.76.83l7.33 7.05c.581.552.91 1.318.91 2.12z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="title_chevron_svg__b" fill="#fff"><use xlink:href="#title_chevron_svg__a"></use></mask><use fill="#15151E" fill-rule="nonzero" xlink:href="#title_chevron_svg__a"></use><g fill="#E10600" mask="url(#title_chevron_svg__b)"><path d="M-7-2h24v24H-7z"></path></g></g></svg>
+                            </div>
+                        </div>
+                        <p>View All</p>
+                    </div>
+                    <div class="videoCards">
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/Race.jpeg" alt="">
+                            </div>
+                            <div class="videoTitleBox">
+                                <div class="videoTitleInfo">
+                                    <div>02:09:28</div>
+                                    <div>REPLAY</div>
+                                </div>
+                                <div class="videoName">
+                                    <p>2022 United States Grand Prix</p>
+                                </div>
+                                <div class="videoFeature">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/RaceHighlights.jpeg" alt="">
+                            </div>
+                            <div class="videoTitleBox">
+                                <div class="videoTitleInfo">
+                                    <div class="timeDuration">02:09:28</div>
+                                    <div>REPLAY</div>
+                                </div>
+                                <div class="videoName">
+                                    <p>2021 Abu Dhabi Grand Prix</p>
+                                </div>
+                                <div class="videoFeature">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/PostRaceShow.jpeg" alt="">
+                            </div>
+                            <div class="videoTitleBox">
+                                <div class="videoTitleInfo">
+                                    <div class="timeDuration">02:09:28</div>
+                                    <div>REPLAY</div>
+                                </div>
+                                <div class="videoName">
+                                    <p>Post-Race Show - USA</p>
+                                </div>
+                                <div class="videoFeature">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="videoCard">
+                            <div class="videoCover">
+                                <img src="./rescources/images/F1TV/videoList/PreRaceShow.jpeg" alt="">
+                            </div>
+                            <div class="videoTitleBox">
+                                <div class="videoTitleInfo">
+                                    <div class="timeDuration">02:09:28</div>
+                                    <div>REPLAY</div>
+                                </div>
+                                <div class="videoName">
+                                    <p>Pre-Race Show - USA</p>
+                                </div>
+                                <div class="videoFeature">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -444,7 +526,6 @@
     }
 
     .content {
-        /* height: 2000px; */
         overflow: hidden;
     }
 
@@ -556,7 +637,7 @@
 
     .mainContent {
         position: relative;
-        height: 2100px;
+        height: auto;
         background-color: #15151E;
     }
 
