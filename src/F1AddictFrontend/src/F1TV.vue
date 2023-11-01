@@ -445,7 +445,7 @@
                         </div>
                     </div>
 
-                    <div class="videoCards" style="margin-top: 50px;">
+                    <div class="videoCards" style="margin-top: 40px;">
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/F2.jpeg" alt="">
@@ -489,7 +489,9 @@
 
 <style scoped>
     .banner {
-        position: relative;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
         height: 90px;
         background-color: red;
     }
@@ -574,7 +576,7 @@
         display: flex;
         width: 80%;
         margin: 0 auto;
-        margin-top: -50px;
+        margin-top: 30px;
         background-image: url("./rescources/images/F1TV/Race.jpeg");
         background-size: contain;
     }
@@ -678,7 +680,7 @@
 
     .mainContentWrapper {
         margin: 0 auto;
-        width: 80%;
+        width: 75%;
         padding-top: 30px;
     }
 
@@ -728,7 +730,7 @@
     .raceList {
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .listName {
@@ -795,6 +797,7 @@
     .videoTitleInfo div:nth-child(1) {
         padding-left: 0px;
     }
+
     .videoName {
         padding-top: 5px;
         font-size: 13px;
@@ -811,12 +814,12 @@
     .lastTitle {
         background-color: #212127;
         width: 95%;
-        height: 130px;
+        height: 110px;
         border-radius: 0px 0px 20px 20px;
         padding-left: 10px;
         font-weight: bold;
         font-size: large;
-        padding-top: 50px;
+        padding-top: 40px;
         padding-left: 25%;
     }
 
