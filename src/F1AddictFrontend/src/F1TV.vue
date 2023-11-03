@@ -123,7 +123,7 @@
                                     <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                                     <p>Race Highlights - USA</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                                     <p>Post-Race Show - USA</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
                                     <p>Pre-Race Show - USA</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -206,7 +206,7 @@
                                     <p>2023 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                     <p>RACE IN 30 - Mexico City</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -240,7 +240,7 @@
                                     <p>2023 Mexico City GP - Qualifying</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -257,7 +257,7 @@
                                     <p>2022 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -289,7 +289,7 @@
                                     <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -306,7 +306,7 @@
                                     <p>Race Highlights - USA</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -323,7 +323,7 @@
                                     <p>Post-Race Show - USA</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -388,7 +388,7 @@
                                     <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                                     <p>2022 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -422,7 +422,7 @@
                                     <p>2021 Abu Dhabi Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -439,7 +439,7 @@
                                     <p>2021 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-
+                                    F1
                                 </div>
                             </div>
                         </div>
@@ -809,6 +809,16 @@
         height: 130px;
         border-radius: 0px 0px 20px 20px;
         padding-left: 10px;
+    }
+
+    .videoFeature {
+        display: inline-block;
+        margin-top: 61px;
+        margin-left: 88%;
+        border-bottom: 4px solid red;
+        font-size: 10px;
+        padding-bottom: 5px;
+        color: red;
     }
 
     .lastTitle {
