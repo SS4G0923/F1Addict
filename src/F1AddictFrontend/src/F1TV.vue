@@ -1,6 +1,6 @@
 <script setup>
-    import Footer from './components/footer.vue';
-
+    import { onMounted } from 'vue';
+import Footer from './components/footer.vue';
 
     document.title = 'F1 TV | Home';
     let username = localStorage.getItem('username') ? localStorage.getItem('username').toUpperCase() : '';
@@ -11,7 +11,6 @@
         isShow = !isShow;
         location.reload();
     }
-
 </script>
 
 <template>
@@ -113,6 +112,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/Race.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -135,6 +137,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceHighlights.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -154,6 +159,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/PostRaceShow.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -173,6 +181,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/PreRaceShow.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -207,6 +218,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceMex.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -229,6 +243,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceIn30Mex.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -248,6 +265,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/QualiMex.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -270,6 +290,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceMex22.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -307,6 +330,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videolist/TechTalk1.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -326,6 +352,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/TechTalk2.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -345,6 +374,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/TechTalk3.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -412,6 +444,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/Race.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -434,6 +469,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceMex22.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -456,6 +494,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceAbuDhabi21.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -478,6 +519,9 @@
                         <div class="videoCard">
                             <div class="videoCover">
                                 <img src="./rescources/images/F1TV/videoList/RaceMex21.jpeg" alt="">
+                                <div class="videoPlayButton">
+                                    <svg width="20" height="20" viewBox="0 0 18.1 20"><path d="M16.9 8L0 0v20l16.9-8.4c.7-.3 1.2-1 1.2-1.8s-.5-1.5-1.2-1.8zM2 16.7V3.2l13.9 6.6L2 16.7z"></path></svg>
+                                </div>
                             </div>
                             <div class="videoTitleBox">
                                 <div class="videoTitleInfo">
@@ -545,7 +589,7 @@
     .banner {
         width: 100%;
         position: fixed;
-        z-index: 10;
+        z-index: 11;
         height: 90px;
         background-color: red;
     }
@@ -855,6 +899,30 @@
     .videoName {
         padding-top: 5px;
         font-size: 13px;
+    }
+
+    .videoPlayButton {
+        position: relative; 
+        z-index: 10;
+        border-radius: 0px 20px 0px 0px;
+        border: 0px;
+        background-color: #212127;
+        width: 50px; 
+        height: 50px;
+        margin-top: -60px;
+    }
+
+    .videoPlayButton svg {
+        fill: white;
+        margin-left: 30%;
+        margin-top: 28%;
+    }
+
+    .videoCard:hover {
+        .videoPlayButton {
+            background-color: red;
+            transition: all 0.3s;
+        }
     }
 
     .videoTitleBox {
