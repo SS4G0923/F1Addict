@@ -772,7 +772,7 @@ import Footer from './components/footer.vue';
 
     .mainContent {
         position: relative;
-        height: auto;
+        height: 2600px;
         background-color: #15151E;
     }
 
@@ -923,6 +923,13 @@ import Footer from './components/footer.vue';
             background-color: red;
             transition: all 0.3s;
         }
+
+        position: relative;
+        overflow: auto;
+        transform: scale(1.05);
+        transition: all 0.3s;
+
+        
     }
 
     .videoTitleBox {
