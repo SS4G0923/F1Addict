@@ -123,7 +123,12 @@
                                     <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +145,9 @@
                                     <p>Race Highlights - USA</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +164,9 @@
                                     <p>Post-Race Show - USA</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +183,9 @@
                                     <p>Pre-Race Show - USA</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +217,12 @@
                                     <p>2023 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +239,9 @@
                                     <p>RACE IN 30 - Mexico City</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +258,12 @@
                                     <p>2023 Mexico City GP - Qualifying</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +280,12 @@
                                     <p>2022 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +317,9 @@
                                     <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory" style="margin-top: -17px;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +336,9 @@
                                     <p>Race Highlights - USA</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory" style="margin-top: -17px;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +355,9 @@
                                     <p>Post-Race Show - USA</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxCategory" style="margin-top: -17px;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +422,12 @@
                                     <p>2023 United States Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +444,12 @@
                                     <p>2022 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -422,7 +466,12 @@
                                     <p>2021 Abu Dhabi Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -439,7 +488,12 @@
                                     <p>2021 Mexico City Grand Prix</p>
                                 </div>
                                 <div class="videoFeature">
-                                    F1
+                                    <div class="boxSvg">
+                                        <svg class="steeringWheelSvg" width="18" height="18" viewBox="0 0 20 14.5"><path class="steering_wheel_svg__st0" d="M15 8.7l.9-4.1c.5.1.9.3 1.3.4.5.2.9.7.9 1.3v.5c0 .7-.1 1.3-.3 2L15 8.7zM12.8 6c-1.8-.4-3.7-.4-5.5 0l-.5-2c2.1-.5 4.4-.5 6.5 0l-.5 2zM10 9.7c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm-7.7-1C2.1 8 2 7.4 2 6.7v-.5c0-.6.4-1 .9-1.2.4-.1.8-.3 1.3-.4L5 8.7H2.3zM17.5 0l-.7.6c-.5.4-.6 1.1-.2 1.6.1.2.3.4.4.6-2.3-.7-4.6-1.1-7-1.1-2.4 0-4.7.4-7 1.1.1-.2.3-.4.4-.6.3-.5.3-1.2-.2-1.6L2.6 0c-3.7 4.1-3.4 10.5.7 14.1.1.1.2.2.4.3L5 12.9c-.4-.4-.9-.8-1.2-1.2-.2-.3-.2-.7.1-.9.1-.1.2-.1.4-.1h1.3c.2.6.7.9 1.3 1h6.2c.6-.1 1.1-.5 1.3-1h1.3c.3 0 .6.3.6.6 0 .1 0 .3-.1.4-.4.4-.8.9-1.2 1.2l1.3 1.6c4.3-3.5 5-9.8 1.5-14.1-.1-.2-.2-.3-.3-.4z"></path></svg>
+                                    </div>
+                                    <div class="boxCategory" style="margin-left: 78%;">
+                                        F1
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -812,12 +866,21 @@
     }
 
     .videoFeature {
+        display: flex;
+        margin-top: 22%;
+    }
+
+    .boxSvg{
+        padding-left: 5px;
+    }
+
+    .boxCategory {
+        margin-top: 2px;
         display: inline-block;
-        margin-top: 61px;
         margin-left: 88%;
         border-bottom: 4px solid red;
         font-size: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 7px;
         color: red;
     }
 
