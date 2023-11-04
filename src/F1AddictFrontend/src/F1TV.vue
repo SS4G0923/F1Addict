@@ -722,10 +722,12 @@ import Footer from './components/footer.vue';
         margin-top: 28%;
     }
     
-    .playerButton:hover {
-        opacity: 1;
-        transition: all 0.3s;
-        background-color: red;
+    .playerWrapper:hover{
+        .playerButton {
+            opacity: 1;
+            transition: all 0.3s;
+            background-color: red;
+        }
     }
 
     .boxRight {
