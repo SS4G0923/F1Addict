@@ -973,9 +973,11 @@ import Footer from './components/footer.vue';
         padding-left: 25%;
     }
 
-    .lastTitle:hover {
-        background-color: white;
-        color: black;
-        transition: all 0.3s;
+    .videoCard:hover {
+        .lastTitle{
+            background-color: white;
+            color: black;
+            transition: all 0.3s;
+        }
     }
 </style>
