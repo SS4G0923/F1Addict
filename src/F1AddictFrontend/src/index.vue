@@ -155,7 +155,7 @@
         }
 
         .contentWrapper {
-            width: 80%;
+            width: 85%;
             height: auto;
             margin: 0 auto;
             position: relative;
@@ -265,6 +265,7 @@
             border-left: whitesmoke;
             border-top: whitesmoke;
             border-style: solid;
+            border-width: 1px;
         }
 
         .titleBox:hover {
