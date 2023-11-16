@@ -261,7 +261,7 @@
             height: 120px;
             padding: 0px 10px 20px 10px;
             border-radius: 0px 0px 15px 0px;
-            border-color: gray;
+            border-color: rgb(182, 178, 178);
             border-left: whitesmoke;
             border-top: whitesmoke;
             border-style: solid;
@@ -271,6 +271,10 @@
         .titleBox:hover {
             border-right: 1px solid red;
             border-bottom: 1px solid red;
+        }
+
+        .titleBox p:nth-child(1){
+            margin-bottom: 5px;
         }
 
         .fantasyWrapper {
@@ -298,7 +302,7 @@
             display: block;
             color: white;
             font-size: 35px;
-            padding: 15% 0px 0px 30px;
+            padding: 11% 0px 0px 30px;
         }
 
         .fantasyLeft p {
@@ -346,7 +350,7 @@
         }
 
         .editorsLeft {
-            margin: 10px 0px 10px 0px;
+            margin: 0px 0px 10px 0px;
             width: 50%;
             height: 94%;
             background-color: whitesmoke;
