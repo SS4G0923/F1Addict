@@ -13,8 +13,8 @@
             <div class="news-box">
                 <div class="box-left">
                     <p style="margin-top: 30px; color: #E10600; font-size: 10px;">FEATURE</p>
-                    <div class="title-left"><h2><a href="#">POWER RANKINGS: One driver shines under the lights as the judges scores come in from Singapore</a></h2></div>
-                    <img class="left-img" src="./rescources/images/powerRankings.avif" alt="">
+                    <div class="title-left"><h2><a href="#">5 Winners and 5 Losers from Abu Dhabi – Who rounded off the season on a high?</a></h2></div>
+                    <img class="left-img" src="./rescources/images/mainPageLeftImage.avif" alt="">
                     <div class="left-layer"></div>
                 </div>
                 <div class="boxRight">
@@ -23,14 +23,14 @@
                             <img class="right-image" src="./rescources/images/right-1.avif" alt="">
                             <div class="titleBox">
                                 <p style="padding-top: 10px; color: #E10600; font-size: 10px;">NEWS</p>
-                                <p><a href="#">‘I’m more than proud’ – Frederic Vasseur reflects on ‘emotional’ first win as Ferrari team boss</a></p>
+                                <p><a href="#">'This car will go down in the history books' – Horner reflects on 'phenomenal' Red Bull season</a></p>
                             </div>
                         </div>
                         <div class="right">
                             <img class="right-image" src="./rescources/images/right-2.avif" alt="">
                             <div class="titleBox">
                                 <p style="padding-top: 10px; color: #E10600; font-size: 10px;">FEATURE</p>
-                                <p><a href="#">PALMER: What impressive Liam Lawson needs to do next to prove he deserves a full-time race seat in F1</a></p>
+                                <p><a href="#">F1 NATION: Verstappen signs off in style and Mercedes grab P2 – it's our Abu Dhabi Grand Prix review</a></p>
                             </div>
                         </div>
                     </div>
@@ -39,14 +39,14 @@
                             <img class="right-image" src="./rescources/images/right-3.avif" alt="">
                             <div class="titleBox">
                                 <p style="padding-top: 10px; color: #E10600; font-size: 10px;">NEWS</p>
-                                <p><a href="#">Piastri signs multi-year extension with McLaren until the end of 2026</a></p>
+                                <p><a href="#">Hamilton admits final race of season ‘couldn’t have been much worse’ with Red Bull’s pace ‘definitely a concern’ for 2024</a></p>
                             </div>
                         </div>
                         <div class="right">
                             <img class="right-image" src="./rescources/images/right-4.avif" alt="">
                             <div class="titleBox">
                                 <p style="padding-top: 10px; color: #E10600; font-size: 10px;">FEATURE</p>
-                                <p><a href="#">ANALYSIS: Why McLaren moved to lock down Piastri with a fresh contract extension</a></p>
+                                <p><a href="#">'It looks fast' – Albon 'excited' by Williams' 2024 car after helping team seal P7 in the championship in Abu Dhabi</a></p>
                             </div>
                         </div>
                     </div>
@@ -55,14 +55,14 @@
                             <img class="right-image" src="./rescources/images/right-5.avif" alt="">
                             <div class="titleBox">
                                 <p style="padding-top: 10px; color: #E10600; font-size: 10px;">POLL</p>
-                                <p><a href="#">THIS WEEK IN F1: 10 quiz questions on all the F1 news after the Singapore Grand Prix</a></p>
+                                <p><a href="#">‘My best season since 2012’ – Alonso full of praise for Aston Martin after bagging fourth in the drivers’ championship</a></p>
                             </div>
                         </div>
                         <div class="right">
                             <img class="right-image" src="./rescources/images/right-6.avif" alt="">
                             <div class="titleBox">
                                 <p style="padding-top: 10px; color: #E10600; font-size: 10px;">FEATURE</p>
-                                <p><a href="#">IT’S RACE WEEK: 5 storylines we’re excited about ahead of the 2023 Japanese Grand Prix</a></p>
+                                <p><a href="#">FACTS AND STATS: Verstappen becomes first driver in history to lead 1,000 laps in a season</a></p>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
         }
 
         .titleBox {
-            height: 120px;
+            height: 130px;
             padding: 0px 10px 20px 10px;
             border-radius: 0px 0px 15px 0px;
             border-color: rgb(182, 178, 178);
