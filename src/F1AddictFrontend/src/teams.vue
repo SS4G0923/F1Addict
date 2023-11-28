@@ -143,7 +143,7 @@
             width: 80%;
             height: 2800px;
             margin: 0 auto;
-            padding-top: 80px;
+            padding-top: 60px;
             font-family: Formula1;
             display: flex;
             justify-content: space-between;

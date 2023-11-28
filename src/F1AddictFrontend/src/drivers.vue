@@ -72,7 +72,7 @@
         }
 
         .contentWrapper {
-            width: 80%;
+            width: 85%;
             height: 200px;
             margin: 0 auto;
             padding-top: 20px;
@@ -80,7 +80,7 @@
         }
 
         .driversWrapper {
-            width: 80%;
+            width: 85%;
             height: 2800px;
             margin: 0 auto;
             padding-top: 50px;
