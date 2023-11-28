@@ -19,7 +19,7 @@
                     </div>
                     <div class="boxRight">
                         <div class="videoTitle">
-                            2023 United States Grand Prix
+                            2023 Abu Dhabi Grand Prix
                         </div>
                         <div class="videoInfo">
                             <div>
@@ -46,14 +46,14 @@
             <div class="mainContentWrapper">
                 <div class="raceInfo">
                     <div class="flagAndName">
-                        <img src="./rescources/images/countries/USA.avif" alt="">
-                        <p>UNITED STATES</p>
+                        <img src="./rescources/images/countries/UAE.png" alt="">
+                        <p>ABU DHABI</p>
                     </div>
                     <div class="fullRaceName">
-                        <p>FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023</p>
+                        <p>FORMULA 1 ETIHAD AIRWAYS ABU DHABI PRIX 2023</p>
                     </div>
                     <div class="date">
-                        <p>20 OCT - 22 OCT</p>
+                        <p>24 NOV - 26 NOV</p>
                     </div>
                 </div>
 
@@ -561,7 +561,7 @@
         width: 80%;
         margin: 0 auto;
         margin-top: 30px;
-        background-image: url("./rescources/images/F1TV/Race.jpeg");
+        background-image: url("./rescources/images/F1TV/Race_AbuDhabi.jpeg");
         background-size: contain;
     }
 
@@ -583,7 +583,7 @@
         width: 100%;
         margin-top: 400px;
         padding-bottom: 10%;
-        margin-left: 100px;
+        margin-left: 70px;
         font-family: Formula1;
         font-weight: bold;
         font-size: xx-large;
@@ -702,7 +702,7 @@
 
     .date p {
         display: block;
-        width: 145px;
+        width: 160px;
         margin-top: 10px;
         padding: 10px 15px 10px 15px;
         font-family: Formula1;
