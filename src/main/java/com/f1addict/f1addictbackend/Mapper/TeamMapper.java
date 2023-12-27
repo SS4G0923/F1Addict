@@ -8,6 +8,6 @@ import java.util.List;
 
 @Mapper
 public interface TeamMapper {
-    @Select("select * from teams")
+    @Select("select * from teams order by points desc")
     public List<Team> getTeamList();
 }

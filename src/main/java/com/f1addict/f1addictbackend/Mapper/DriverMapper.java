@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface DriverMapper {
-    @Select("select * from drivers")
+    @Select("select * from drivers order by points desc")
     List<Driver> selectAll();
 }
 

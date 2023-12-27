@@ -50,7 +50,7 @@
                         <p>ABU DHABI</p>
                     </div>
                     <div class="fullRaceName">
-                        <p>FORMULA 1 ETIHAD AIRWAYS ABU DHABI PRIX 2023</p>
+                        <p>FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023</p>
                     </div>
                     <div class="date">
                         <p>24 NOV - 26 NOV</p>
