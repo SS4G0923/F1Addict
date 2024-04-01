@@ -21,7 +21,7 @@
 
     <div class="content" @mouseover="scheduleDetailStore.toFalse">
         <div class="contentWrapper">
-            <div class="drivers">F1 Drivers 2023</div>
+            <div class="drivers">F1 Drivers 2024</div>
             <div class="info">Check out this season's official F1 line-up. Full breakdown of drivers, points and current positions. <br>Follow your favourite F1 drivers on and off the track.</div>
         </div>
         <div class="driversWrapper">

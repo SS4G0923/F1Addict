@@ -42,7 +42,7 @@
 
     <div class="content" @mouseover="scheduleDetailStore.toFalse">
         <div class="contentWrapper">
-            <div class="drivers">F1 Teams 2023</div>
+            <div class="drivers">F1 Teams 2024</div>
             <div class="info">Discover everything you need to know about this year's Formula 1 teams - drivers, podium <br>finishes, points earned and championship titles.</div>
         </div>
         <div class="teamsWrapper">
