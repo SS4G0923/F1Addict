@@ -15,6 +15,10 @@ public class DriverServiceImpl implements DriverService {
         DriverMapper driverMapper;
         public List<Driver> selectAll() {
             List<Driver> driverList = driverMapper.selectAll();
+            int i = 1;
+            for(Driver driver : driverList){
+                driver.setStanding(i++);
+            }
             return driverList;
         }
 }
