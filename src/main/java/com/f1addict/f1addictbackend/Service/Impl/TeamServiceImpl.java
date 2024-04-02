@@ -14,6 +14,14 @@ public class TeamServiceImpl implements TeamService {
     @Autowired
     TeamMapper teamMapper;
     public List<Team> selectAll() {
-        return teamMapper.getTeamList();
+
+        int i = 1;
+        List<Team> teamList = teamMapper.getTeamList();
+
+        for(Team team : teamList){
+            team.setStanding(i++);
+        }
+
+        return teamList;
     }
 }
