@@ -9,3 +9,8 @@ spring:
     url: jdbc:mysql://localhost:3306/f1addict?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: "20030312"
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
