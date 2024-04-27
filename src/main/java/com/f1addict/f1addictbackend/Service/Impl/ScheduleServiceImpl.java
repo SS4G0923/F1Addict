@@ -1,9 +1,13 @@
 package com.f1addict.f1addictbackend.Service.Impl;
 
+import com.alibaba.fastjson.JSON;
+import com.f1addict.f1addictbackend.Entity.Driver;
 import com.f1addict.f1addictbackend.Entity.Schedule;
 import com.f1addict.f1addictbackend.Mapper.ScheduleMapper;
 import com.f1addict.f1addictbackend.Service.ScheduleService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -12,13 +16,29 @@ import java.util.LinkedList;
 import java.util.List;
 
 @Service
+@Slf4j
 public class ScheduleServiceImpl implements ScheduleService {
 
     @Autowired
     ScheduleMapper scheduleMapper;
 
+    @Autowired
+    RedisTemplate<String, String> redisTemplate;
+
     public List<Schedule> getScheduleList(){
-        List<Schedule> list = scheduleMapper.getSchedule();
+        String scheduleString = redisTemplate.opsForValue().get("schedule");
+        List<Schedule> list = null;
+        if(scheduleString != null){
+            list = JSON.parseArray(scheduleString, Schedule.class);
+            log.info("get schedule from redis");
+        }
+
+        if(scheduleString == null){
+            list = scheduleMapper.getSchedule();
+            redisTemplate.opsForValue().set("schedule", JSON.toJSONString(list), 3600L, java.util.concurrent.TimeUnit.SECONDS);
+            log.info("get schedule from mysql");
+        }
+
         List<Schedule> result = new LinkedList<>();
         LocalDate now = LocalDate.now();
         Month month = now.getMonth();
