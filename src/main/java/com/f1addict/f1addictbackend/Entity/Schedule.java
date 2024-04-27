@@ -8,4 +8,5 @@ public class Schedule {
     String raceCountry;
     String date;
     String description;
+    int raceNum;
 }
