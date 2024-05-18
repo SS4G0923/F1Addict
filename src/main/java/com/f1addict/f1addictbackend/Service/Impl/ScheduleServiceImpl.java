@@ -43,41 +43,53 @@ public class ScheduleServiceImpl implements ScheduleService {
         LocalDate now = LocalDate.now();
         Month month = now.getMonth();
         String currMonth = month.toString();
+        boolean isCurrent = false;
         int day = now.getDayOfMonth();
         boolean inMonth = false;
-        for(Schedule schedule : list){
-            int raceNum = schedule.getRaceNum();
+        int raceNum;
+        boolean isFull = false;
+        int tempRaceNum = 0;
+        for(Schedule schedule : list) {
+            if (isFull) break;
+            raceNum = schedule.getRaceNum();
             String date = schedule.getDate();
             int spaceIndex = date.indexOf(" ");
             String monthValue = date.substring(0, spaceIndex).toUpperCase();
-            if(monthValue.equals(currMonth)){
+            if (monthValue.equals(currMonth)) {
                 inMonth = true;
+                tempRaceNum = raceNum;
                 int dayValue = Integer.parseInt(date.substring(date.indexOf("-") + 1));
-                if(dayValue >= day){
-                    for(Schedule schedule1 : list){
-                        if(schedule1.getRaceNum() >= raceNum - 1 && schedule1.getRaceNum() <= raceNum + 2){
-                            result.add(schedule1);
-                        }
+                if (dayValue >= day) {
+                    if (dayValue - 2 <= day) {
+                        isCurrent = true;
                     }
-                }
-                continue;
-            }
-
-            if(inMonth) {
-                if (result.isEmpty()) {
                     for (Schedule schedule1 : list) {
                         if (schedule1.getRaceNum() >= raceNum - 1 && schedule1.getRaceNum() <= raceNum + 2) {
                             result.add(schedule1);
+                            if (result.size() == 4) {
+                                isFull = true;
+                                break;
+                            }
                         }
                     }
                 }
             }
         }
+        if (inMonth) {
+            if (result.isEmpty()) {
+                for (Schedule schedule1 : list) {
+                    if (schedule1.getRaceNum() >= tempRaceNum - 1 && schedule1.getRaceNum() <= tempRaceNum + 2) {
+                        result.add(schedule1);
+                    }
+                }
+            }
+        }
+
 
         int i = 0;
         for(Schedule schedule : result){
             if(i == 0) schedule.setDescription("Previous");
-            if(i == 1) schedule.setDescription("Next");
+            if(i == 1) schedule.setDescription(isCurrent ? "Current" : "Next");
             if(i == 2) schedule.setDescription("Upcoming");
             i++;
         }
