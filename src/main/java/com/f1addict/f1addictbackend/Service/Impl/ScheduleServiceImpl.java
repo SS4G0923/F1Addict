@@ -78,7 +78,7 @@ public class ScheduleServiceImpl implements ScheduleService {
         if (inMonth) {
             if (result.isEmpty()) {
                 for (Schedule schedule1 : list) {
-                    if (schedule1.getRaceNum() >= tempRaceNum - 1 && schedule1.getRaceNum() <= tempRaceNum + 2) {
+                    if (schedule1.getRaceNum() >= tempRaceNum && schedule1.getRaceNum() <= tempRaceNum + 3) {
                         result.add(schedule1);
                     }
                 }
