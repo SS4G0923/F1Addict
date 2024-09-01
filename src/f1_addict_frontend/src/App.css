@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: scroll; */
+  }
+  
+  ul ol {
+    list-style: none;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  a {
+    color: black;
+    font-family: Formula1;
+    text-decoration: none;
+  }
