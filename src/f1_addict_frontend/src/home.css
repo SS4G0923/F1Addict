@@ -1,0 +1,227 @@
+.content {
+    background-color: whitesmoke;
+    height: auto;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+.contentWrapper {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    font-family: Formula1;
+}
+
+.news-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    border-radius: 0px 30px 0px 0px;
+    border: 10px solid red;
+    border-left: none;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxRight {
+    margin-left: 51%;
+    margin-top: 10px;
+    width: 50%;
+    height: 100%;
+}
+
+.box-upper-right {
+    width: 100%;
+    height: 33%;
+    right: 0;
+    top: 20px;
+    display: flex;
+}
+
+.box-mid-right {
+    width:100%;
+    height: 33%;
+    right: 0;
+    top: 35%;
+    display: flex;
+}
+
+.box-lower-right {
+    width: 100%;
+    height: 33%;
+    right: 0;
+    bottom: -10px;
+    display: flex;
+}
+
+.title-left {
+    font-size: 20px;
+    font-weight: normal;
+    width: 94%;
+    margin-top: 5px
+}
+
+.title-left:hover {
+    text-decoration: underline;
+}
+
+.left-img {
+    width: 95%;
+    margin-top: 15px;
+}
+
+.left-layer {
+    margin-top: 10px;
+    background: url(src/assets/images/backLayer.png);
+    width: 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.right-image {
+    width: 100%;
+}
+
+.titleBox {
+    height: 130px;
+    padding: 0px 10px 20px 10px;
+    border-radius: 0px 0px 15px 0px;
+    border-color: rgb(182, 178, 178);
+    border-left: whitesmoke;
+    border-top: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.titleBox:hover {
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.titleBox p:nth-child(1){
+    margin-bottom: 5px;
+}
+
+.fantasyWrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+    font-family: Formula1;
+    border-radius: 0px 40px 40px 0px;
+    border: #501d83 15px solid;
+    border-left: none;
+    display: flex;
+    filter: drop-shadow(0px 0px  30px #501d83);
+}
+
+.fantasyLeft {
+    margin: 10px 0px 10px 0px;
+    width: 50%;
+    height: auto;
+    background-color: #501d83;
+}
+
+.fantasyLeft b {
+    display: block;
+    color: white;
+    font-size: 35px;
+    padding: 11% 0px 0px 30px;
+}
+
+.fantasyLeft p {
+    display: block;
+    color: white;
+    padding: 30px 0px 0px 30px;
+}
+
+.fantasyRight {
+    margin: 10px 15px 7px 0px;
+    width: 50%;
+}
+
+.fantasyImage {
+    width: 100%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.fantasyButton {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 15px;
+    font-family: Formula1;
+    color: black;
+    height: 60px;
+    width: 130px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.editorsPickWrapper {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family: Formula1;
+    border-radius: 0px 40px 40px 0px;
+    border: red 15px solid;
+    border-left: none;
+    display: flex;
+}
+
+.editorsLeft {
+    margin: 0px 0px 10px 0px;
+    width: 50%;
+    height: 94%;
+    background-color: whitesmoke;
+}
+
+.editorPhoto {
+    padding-top: 10px;
+}
+
+.editorPhoto>img {
+    width: 98%;
+}
+
+.editorsRight {
+    width: 50%;
+    height: auto;
+}
+
+.cardTitle{
+    padding-top: 10px; 
+    color: #E10600; 
+    font-size: 10px;
+}

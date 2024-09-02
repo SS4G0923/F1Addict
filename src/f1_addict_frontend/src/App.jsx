@@ -1,13 +1,11 @@
-import Footer from './components/footer'
-import Banner from './components/banner';
+import Home from './home';
 import './App.css';
 
 function App() {
   
   return (
     <>
-      <Banner/>
-      <Footer/>
+      <Home/>
     </>
   )
 }
