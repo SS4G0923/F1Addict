@@ -21,8 +21,8 @@ export default function ScheduleDetail() {
         <>
             <div className="scheduleDetail">
                 <div className="scheduleHeader">
-                    <h2><a href="https://www.formula1.com/en/racing/2023.html" style={{color: 'white'}}>Full Schedule</a></h2>
-                    <h2><a href="https://www.formula1.com/en/racing/2023/2024.html" style={{color: 'white'}}>2024</a></h2>
+                    <h2><a href="https://www.formula1.com/en/racing/2024.html" style={{color: 'white'}}>Full Schedule</a></h2>
+                    <h2><a href="https://www.formula1.com/en/racing/2024/2025.html" style={{color: 'white'}}>2025</a></h2>
                 </div>
                 <div className="scheduleList">
                     <ul>
