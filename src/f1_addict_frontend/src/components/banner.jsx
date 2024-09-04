@@ -1,16 +1,16 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import BannerDetail from './bannerDetail';
-import './banner.css';
+import { Link } from 'react-router-dom';
 import F1_img from '../assets/images/F1.svg.png';
+import './banner.css';
 
-
-export default function Banner() {
+export default function Banner({isShowScheduleFromParent}) {
     
     let username = localStorage.getItem('username') ? localStorage.getItem('username').toUpperCase() : '';
 
-    const [isShowSchedule, setIsShowSchedule] = useState(false);
+    const [isShowSchedule, setIsShowSchedule] = useState(isShowScheduleFromParent);
     const [isShow] = useState(username.trim() !== '');
-    
     
     return(
         <>
@@ -21,7 +21,7 @@ export default function Banner() {
                 <div className="bannerContent">
                     <ul className="bannerlist"> 
                         <li><a href="#" target="_blank" className="scheduleTag" id="1" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(true)}>Schedule</a></li>
-                        <li><a href="/drivers" target="_blank" id="2" className="driversTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Drivers</a></li>
+                        <li><Link to="/drivers" id="2" className="driversTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Drivers</Link></li>
                         <li><a href="/teams" target="_blank" id="3" className="constructorsTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Constructors</a></li>
                         <li><a href="/f1tv" target="_blank" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>F1 TV</a></li>
                     </ul>
@@ -55,3 +55,7 @@ export default function Banner() {
         </>
     )
 }
+
+Banner.propTypes = {
+    isShowScheduleFromParent: PropTypes.bool.isRequired,
+  };

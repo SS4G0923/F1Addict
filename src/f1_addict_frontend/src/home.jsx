@@ -1,12 +1,18 @@
+import { useState } from 'react';
 import Banner from './components/banner';
 import Footer from './components/footer';
 import './home.css';
 
 export default function Home(){
+
+    document.title = 'F1Addict - Home';
+
+    const [isShowScheduleFromParent, setIsShowScheduleFromParent] = useState(false);
+
     return(
         <>
-            <Banner/>
-            <div name="content" className="content" onMouseOver="">
+            <Banner isShowScheduleFromParent={isShowScheduleFromParent}/>
+            <div name="content" className="content" onMouseOver={()=>setIsShowScheduleFromParent(false)}>
                 <div className="contentWrapper">
                     <div className="news-box">
                         <div className="box-left">
@@ -68,7 +74,7 @@ export default function Home(){
                     </div>
                 </div>
 
-                <div className="fantasyWrapper">
+                <div className="fantasyWrapper" style={{ marginTop: '1100px' }}>
                     <div className="fantasyLeft">
                         <b>F1 Fantasy</b>
                         <p>Race your way to the top with Official F1 Fantasy and win incredible prizes</p>
