@@ -74,7 +74,7 @@ export default function Home(){
                     </div>
                 </div>
 
-                <div className="fantasyWrapper" style={{ marginTop: '1100px' }}>
+                <div className="fantasyWrapper">
                     <div className="fantasyLeft">
                         <b>F1 Fantasy</b>
                         <p>Race your way to the top with Official F1 Fantasy and win incredible prizes</p>

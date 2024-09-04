@@ -25,8 +25,8 @@ export default function Drivers(){
         <>
             <Banner isShowScheduleFromParent={isShowScheduleFromParent}/>
             
-            <div className="content" onMouseOver={()=>setIsShowScheduleFromParent(false)}>
-                <div className="contentWrapper">
+            <div className="driversContent" onMouseOver={()=>setIsShowScheduleFromParent(false)}>
+                <div className="driversContentWrapper">
                     <div className="drivers">F1 Drivers 2024</div>
                     <div className="info">Check out this season&apos;s official F1 line-up. Full breakdown of drivers, points and current positions. <br/>Follow your favourite F1 drivers on and off the track.</div>
                 </div>

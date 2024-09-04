@@ -1,10 +1,10 @@
-.content {
+.driversContent {
     background-color: white;
     height:3000px;
     padding-top: 50px;
 }
 
-.contentWrapper {
+.driversContentWrapper {
     width: 85%;
     height: 200px;
     margin: 0 auto;
