@@ -19,7 +19,7 @@
     padding-top: 50px;
     font-family: Formula1;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
@@ -48,6 +48,8 @@
     border-right: #15151E 2px solid;
     border-top: #15151E 2px solid;
     border-top-right-radius: 20px;
+    padding-right: 15px;
+    margin-right: 15px;
 }
 
 .driverCard-rest {
@@ -56,6 +58,8 @@
     border-right: #15151E 2px solid;
     border-top: #15151E 2px solid;
     border-top-right-radius: 20px;
+    padding-right: 15px;
+    margin-right: 12px;
 }
 
 .driverCard-top3:hover {
@@ -71,7 +75,7 @@
     justify-content: space-between;;
     padding: 10px 10px 0px 10px;
     height: 15%;
-    border-bottom: #38383f 2px solid;
+    border-bottom: #b6afaf 2px solid;
 }
 
 .driverCard-mid {
@@ -79,7 +83,7 @@
     justify-content: space-between;
     padding: 10px 10px;
     height: 15%;
-    border-bottom: #38383f 2px solid;
+    border-bottom: #b6afaf 2px solid;
 }
 
 .driverName {
@@ -137,15 +141,19 @@
 
 .driverPoints p:nth-child(1) {
     letter-spacing: 4px; 
-    margin-left: 3px;
+    font-family: 'Formula1';
+    font-stretch: expanded;;
 }
 
 .driverPoints p:nth-child(2) {
     background-color: black; 
     color: white; 
-    letter-spacing: 2px; 
+    letter-spacing: 1px; 
     border-radius: 5px; 
     padding: 1px 3px 1px 5px;
+    font-family: 'Formula1';
+    font-stretch: expanded;
+    font-size: 15px;
 }
 
 .driverStanding b {

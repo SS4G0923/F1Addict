@@ -49,11 +49,11 @@ export default function Teams(){
             <Banner isShowScheduleFromParent={isShowScheduleFromParent}/>
 
             <div className="teamsContent">
-                <div className="teamsContentWrapper" onMouseOver={()=>setIsShowScheduleFromParent(false)}>
+                <div className="teamsContentWrapper">
                     <div className="team_drivers">F1 Teams 2024</div>
                     <div className="info">Discover everything you need to know about this year&apos;s Formula 1 teams - drivers, podium <br/>finishes, points earned and championship titles.</div>
                 </div>
-                <div className="teamsWrapper">
+                <div className="teamsWrapper" onMouseOver={()=>setIsShowScheduleFromParent(false)}>
                     {teams.map((team) => (
                         <>
                             <div className="teamCard">
