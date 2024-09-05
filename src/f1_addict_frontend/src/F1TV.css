@@ -1,0 +1,320 @@
+.F1TVContent {
+    overflow: hidden;
+    height: 3400px;
+    background-color: #15151E;
+}
+
+.playerWrapper {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.playerBlock {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0px;
+    background-image: url("src/assets/images/F1TV/Race_AbuDhabi.jpeg");
+    background-size: contain;
+}
+
+.shadowBox {
+    position: relative;
+    z-index: 5;
+    width: 120%;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: -250px;
+    margin-right: -100px;
+    box-shadow: inset -100px -50px 40px 10px #15151E;
+}
+
+.F1TV_titleBox {
+    z-index: 6;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 400px;
+    padding-bottom: 10%;
+    margin-left: 70px;
+    font-family: Formula1;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+}
+
+.playerButton {
+    position: relative;
+    z-index: 10;
+    margin-left: -10%;
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 20px 0px 0px;
+    border: 0px;
+    background-color: darkred;
+    opacity: 0.5;
+}
+
+.playerButton svg {
+    fill: white;
+    margin-left: 30%;
+    margin-top: 28%;
+}
+
+.playerWrapper:hover{
+    .playerButton {
+        opacity: 1;
+        transition: all 0.3s;
+        background-color: red;
+    }
+}
+
+.F1TV_boxRight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.videoInfo {
+    display: flex;
+    margin-top: 10px;
+}
+
+.videoInfo div {
+    display: flex;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #949498;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #949498;
+}
+
+.videoInfo div p {
+    padding-top: 1px;
+}
+
+.videoInfo div svg {
+    margin-right: 3px;
+}
+
+.videoInfo div:nth-child(1) {
+    padding-left: 0px;
+}
+
+.videoInfo p:nth-last-child(1) {
+    border-right: 0px;
+}
+
+.steeringWheelSvg {
+    fill: #949498;
+    padding-bottom: 2px;
+}
+
+.mainContent {
+    position: relative;
+    height: 2600px;
+    background-color: #15151E;
+}
+
+.mainContentWrapper {
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 30px;
+}
+
+.raceInfo {
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid red;
+    border-right: 8px solid red;
+    border-top-right-radius: 25px;
+}
+
+.flagAndName {
+    display: flex;
+    margin-top: 20px;
+    font-family: Formula1;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.flagAndName img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.fullRaceName {
+    margin-top: 10px;
+    font-family: Formula1;
+    font-size: 23px;
+    font-weight: light;
+    color: white;
+}
+
+.TV_date p {
+    display: block;
+    width: 160px;
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    font-family: Formula1;
+    font-size: 13px;
+    font-weight: light;
+    color: white;
+    border-radius: 20px;
+    background-color: #38383F;
+}
+
+.raceList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.listName {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Formula1;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+.listName p:nth-last-child(1) {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.listNameLeft {
+    display: flex;
+}
+
+.listNameSvg {
+    display: block;
+    margin-left: 10px;
+    padding-top: 2px;
+}
+
+.videoCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoCard {
+    display: flex;
+    flex-direction: column;
+    font-family: Formula1;
+    color: white;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.videoCard img{
+    width: 95%;
+}
+
+.videoTitleInfo {
+    padding: 10px 0px 5px;
+    display: flex;
+    color: #949498;
+}
+
+.videoTitleInfo div {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #949498;
+}
+
+.videoTitleInfo div:nth-last-child(1) {
+    border: 0px;
+}
+
+.videoTitleInfo div:nth-child(1) {
+    padding-left: 0px;
+}
+
+.videoName {
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.videoPlayButton {
+    position: relative; 
+    z-index: 10;
+    border-radius: 0px 20px 0px 0px;
+    border: 0px;
+    background-color: #212127;
+    width: 50px; 
+    height: 50px;
+    margin-top: -60px;
+}
+
+.videoPlayButton svg {
+    fill: white;
+    margin-left: 30%;
+    margin-top: 28%;
+}
+
+.videoCard:hover {
+    .videoPlayButton {
+        background-color: red;
+        transition: all 0.3s;
+    }
+
+    position: relative;
+    overflow: auto;
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.videoTitleBox {
+    background-color: #212127;
+    width: 95%;
+    height: 130px;
+    border-radius: 0px 0px 20px 20px;
+    padding-left: 10px;
+}
+
+.videoFeature {
+    display: flex;
+    margin-top: 18%;
+}
+
+.boxSvg{
+    padding-left: 5px;
+}
+
+.boxCategory {
+    margin-top: 2px;
+    display: inline-block;
+    margin-left: 88%;
+    border-bottom: 4px solid red;
+    font-size: 10px;
+    padding-bottom: 7px;
+    color: red;
+}
+
+.lastTitle {
+    background-color: #212127;
+    width: 95%;
+    height: 110px;
+    border-radius: 0px 0px 20px 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 40px;
+    padding-left: 25%;
+}
+
+.videoCard:hover {
+    .lastTitle{
+        background-color: white;
+        color: black;
+        transition: all 0.3s;
+    }
+}

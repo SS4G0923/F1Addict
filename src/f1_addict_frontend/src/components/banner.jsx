@@ -21,9 +21,9 @@ export default function Banner({isShowScheduleFromParent}) {
                 <div className="bannerContent">
                     <ul className="bannerlist"> 
                         <li><a href="#" target="_blank" className="scheduleTag" id="1" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(true)}>Schedule</a></li>
-                        <li><Link to="/drivers" id="2" className="driversTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Drivers</Link></li>
-                        <li><a href="/teams" target="_blank" id="3" className="constructorsTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Constructors</a></li>
-                        <li><a href="/f1tv" target="_blank" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>F1 TV</a></li>
+                        <li><Link to="/drivers" target='_blank' id="2" className="driversTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Drivers</Link></li>
+                        <li><Link to="/teams" target="_blank" id="3" className="constructorsTag" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>Constructors</Link></li>
+                        <li><Link to="/f1tv" target="_blank" style={{color: 'white'}} onMouseOver={()=>setIsShowSchedule(false)}>F1 TV</Link></li>
                     </ul>
                 </div>
                 {isShow ? (
