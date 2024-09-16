@@ -19,13 +19,14 @@ export default function Login() {
         }
         const user = {'email': email, 'password': password};
         const res = await axios.post("http://localhost:7070/user/get", user);
-        if(res.data.code === 0){
+        if(res.data.code !== 200){
             alert(res.data.msg);
             return;
         }
-        else if(res.data.code === 1){
+        else if(res.data.code === 200){
             alert("登录成功");
             localStorage.setItem('username', res.data.data.username);
+            localStorage.setItem('token', res.data.data.token);
             navigate('/home');
             return;
         }
