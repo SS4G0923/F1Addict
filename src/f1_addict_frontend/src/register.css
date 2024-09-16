@@ -1,0 +1,59 @@
+.registerContent {
+    height: auto;
+    padding-bottom: 200px;
+    background-color: whitesmoke;
+}
+
+.registerContentWrapper {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.registerForm {
+    padding-top: 15%;
+}
+
+.registerFormTitle {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Formula1;
+}
+
+.registerFormInput input{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.registerFormInput input:focus {
+    outline: none;
+}
+
+.registerFormInput select {
+    display: block;
+    border: 2px solid black;
+    border-radius: 0px 15px 15px 0px;
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 50px;
+    width: 20%;
+}
+
+.registerFormInput select:focus {
+    outline: none;
+}
+
+.registerSubmitButton input{
+    font-family: Formula1;
+    height: 50px;
+    width: 100px;
+    float: right;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 300;
+    font-size: large;
+    border-radius: 10px;
+}
