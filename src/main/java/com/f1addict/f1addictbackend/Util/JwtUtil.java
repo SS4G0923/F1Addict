@@ -1,4 +1,4 @@
-package com.szcu.mms_base.Util;
+package com.f1addict.f1addictbackend.Util;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -11,7 +11,8 @@ import java.util.Map;
 public class JwtUtil {
 	private static final SignatureAlgorithm signatureAlgorithm=SignatureAlgorithm.HS256;//指定加密算法
 	private static final Long expire= (long) (60*60*1000);//设置有效时间
-	private static final String secret="SZCU_MMS_SECRET_KEY_SZCU_MMS_SECRET_KEY";//设置密钥
+	private static final String secret="F1ADDICT_SECRET_KEY_F1ADDICT_SECRET_KEY";//设置密钥
+
 	public String GenerateJwt(Map<String,Object> claims){
 		Key signatureKey=new SecretKeySpec(secret.getBytes(),signatureAlgorithm.getJcaName());
 		return Jwts.builder()
@@ -20,6 +21,7 @@ public class JwtUtil {
 				.setExpiration(new Date(System.currentTimeMillis()+expire))//设置过期时间
 				.compact();
 	}
+
 	public  Map<?,?> ParseJwt(String jwt){
 		Key signatureKey=new SecretKeySpec(secret.getBytes(),signatureAlgorithm.getJcaName());
 		Object body=Jwts.parserBuilder()

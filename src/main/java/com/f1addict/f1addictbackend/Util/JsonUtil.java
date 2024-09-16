@@ -1,4 +1,4 @@
-package com.szcu.mms_base.Util;
+package com.f1addict.f1addictbackend.Util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
