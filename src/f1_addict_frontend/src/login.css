@@ -1,0 +1,45 @@
+.loginContent {
+    height: auto;
+    padding-bottom: 200px;
+    background-color: whitesmoke;
+}
+
+.loginContentWrapper {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.loginForm {
+    padding-top: 15%;
+}
+
+.loginFormTitle {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Formula1;
+}
+
+.loginFormInput input{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.loginFormInput input:focus {
+    outline: none;
+}
+
+.submitButton input{
+    font-family: Formula1;
+    height: 50px;
+    width: 100px;
+    float: right;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 300;
+    font-size: large;
+    border-radius: 10px;
+}
