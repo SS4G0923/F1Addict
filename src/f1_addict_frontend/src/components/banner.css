@@ -35,7 +35,7 @@
 .bannerButton {
     background-color: red;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 0px solid black;
     font-size: 17px;
     font-family: Formula1;
     color: white;

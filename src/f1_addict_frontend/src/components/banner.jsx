@@ -46,8 +46,8 @@ export default function Banner({isShowScheduleFromParent}) {
                     </div>
                 ) : (
                     <div name="user">
-                        <button className="bannerButton">Log in</button>
-                        <button className="bannerButton">Sign up</button>   
+                        <button className="bannerButton"><Link to="/login" style={{color: 'white'}}>Log in</Link></button>
+                        <button className="bannerButton"><Link to="/register" style={{color: 'white'}}>Sign up</Link></button>   
                     </div>
                 )}
             </div>
