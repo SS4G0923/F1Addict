@@ -1,8 +1,8 @@
 package com.f1addict.f1addictbackend.Service.Impl;
 
 import com.alibaba.fastjson.JSON;
-import com.f1addict.f1addictbackend.Entity.Driver;
-import com.f1addict.f1addictbackend.Entity.Team;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.f1addict.f1addictbackend.Entity.Drivers;
 import com.f1addict.f1addictbackend.Mapper.DriverMapper;
 import com.f1addict.f1addictbackend.Service.DriverService;
 import lombok.extern.slf4j.Slf4j;
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 @Slf4j
-public class DriverServiceImpl implements DriverService {
+@Service
+public class DriverServiceImpl extends ServiceImpl<DriverMapper, Drivers> implements DriverService {
 
         @Autowired
         DriverMapper driverMapper;
@@ -22,25 +22,25 @@ public class DriverServiceImpl implements DriverService {
         @Autowired
         RedisTemplate<String, String> redisTemplate;
 
-        public List<Driver> selectAll() {
+        public List<Drivers> selectAll() {
 
             int i = 1;
             String driverListString = redisTemplate.opsForValue().get("driverList");
-            List<Driver> driverList = null;
+            List<Drivers> driversList = null;
             if(driverListString != null){
-                driverList = JSON.parseArray(driverListString, Driver.class);
+                driversList = JSON.parseArray(driverListString, Drivers.class);
                 log.info("get driverList from redis");
             }
 
             if(driverListString == null){
-                driverList = driverMapper.selectAll();
-                redisTemplate.opsForValue().set("driverList", JSON.toJSONString(driverList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
+                driversList = driverMapper.selectList(null);
+                redisTemplate.opsForValue().set("driverList", JSON.toJSONString(driversList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
                 log.info("get driverList from mysql");
             }
 
-            for(Driver driver : driverList){
-                driver.setStanding(i++);
+            for(Drivers drivers : driversList){
+                drivers.setStanding(i++);
             }
-            return driverList;
+            return driversList;
         }
 }

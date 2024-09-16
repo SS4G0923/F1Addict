@@ -11,6 +11,12 @@ export default function Banner({isShowScheduleFromParent}) {
 
     const [isShowSchedule, setIsShowSchedule] = useState(isShowScheduleFromParent);
     const [isShow] = useState(username.trim() !== '');
+
+    const logout = () => {
+        localStorage.removeItem('username');
+        localStorage.removeItem('token');
+        window.location.href = '/login';
+    }
     
     return(
         <>
@@ -32,17 +38,12 @@ export default function Banner({isShowScheduleFromParent}) {
                             className="bannerButton" 
                             style={{
                                 backgroundColor: 'white', 
-                                color: 'red', 
-                                fontSize: 'small', 
-                                fontWeight: 300, 
-                                marginRight: '10px', 
-                                padding: '0px 5px 0px 5px', 
-                                width: '90%'
+                                color: 'red'
                             }}
                         >
                             {username}
                         </button>
-                        <button className="bannerButton">Log out</button>
+                        <button className="bannerButton" onClick={()=>logout()}>Log out</button>
                     </div>
                 ) : (
                     <div name="user">
