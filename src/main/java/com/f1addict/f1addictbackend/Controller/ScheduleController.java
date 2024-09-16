@@ -15,7 +15,6 @@ import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
 
-@Slf4j
 @RestController
 @RequestMapping("/schedule")
 @CrossOrigin("*")

@@ -1,12 +1,14 @@
 package com.f1addict.f1addictbackend.Service;
 
-import com.f1addict.f1addictbackend.Entity.User;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.f1addict.f1addictbackend.Common.R;
+import com.f1addict.f1addictbackend.Entity.UserAuth;
 
-public interface UserService {
+public interface UserService extends IService<UserAuth> {
 
-    User getUserByEmailAndPassword(String email, String password);
+    R<String> login(UserAuth userAuth);
 
-    User getUserByEmail(String email);
+    UserAuth getUserByEmail(String email);
 
-    void addUser(User user);
+    int saveUser(UserAuth userAuth);
 }

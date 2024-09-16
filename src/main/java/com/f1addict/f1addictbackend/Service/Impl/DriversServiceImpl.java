@@ -3,8 +3,8 @@ package com.f1addict.f1addictbackend.Service.Impl;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.f1addict.f1addictbackend.Entity.Drivers;
-import com.f1addict.f1addictbackend.Mapper.DriverMapper;
-import com.f1addict.f1addictbackend.Service.DriverService;
+import com.f1addict.f1addictbackend.Mapper.DriversMapper;
+import com.f1addict.f1addictbackend.Service.DriversService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -14,10 +14,10 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class DriverServiceImpl extends ServiceImpl<DriverMapper, Drivers> implements DriverService {
+public class DriversServiceImpl extends ServiceImpl<DriversMapper, Drivers> implements DriversService {
 
         @Autowired
-        DriverMapper driverMapper;
+        DriversMapper driversMapper;
 
         @Autowired
         RedisTemplate<String, String> redisTemplate;
@@ -33,7 +33,7 @@ public class DriverServiceImpl extends ServiceImpl<DriverMapper, Drivers> implem
             }
 
             if(driverListString == null){
-                driversList = driverMapper.selectList(null);
+                driversList = driversMapper.selectList(null);
                 redisTemplate.opsForValue().set("driverList", JSON.toJSONString(driversList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
                 log.info("get driverList from mysql");
             }

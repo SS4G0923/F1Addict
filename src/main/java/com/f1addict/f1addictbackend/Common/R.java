@@ -7,40 +7,42 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class R<T> implements Serializable {
+public class R<T> {
+    private int code;
+    private String message;
+    private T data;
 
-    private Integer code; //编码：1成功，0和其它数字为失败
-
-    private String msg; //错误信息
-
-    private T data; //数据
-
-    private Map map = new HashMap(); //动态数据
-
-    public static <T> R<T> success(T object) {
-        R<T> r = new R<T>();
-        r.data = object;
-        r.code = 1;
-        return r;
+    public R() {
     }
 
-    public static <T> R<T> error(String msg) {
-        R r = new R();
-        r.msg = msg;
-        r.code = 0;
-        return r;
+    public R(int code, String message) {
+        this.code = code;
+        this.message = message;
     }
 
-    public static <T> R<T> success(String msg) {
-        R r = new R();
-        r.msg = msg;
-        r.code = 1;
-        return r;
+    public R(int code, String message, T data) {
+        this.code = code;
+        this.message = message;
+        this.data = data;
     }
 
-    public R<T> add(String key, Object value) {
-        this.map.put(key, value);
-        return this;
+    public static <T> R<T> success() {
+        return new R<T>(200, "success");
     }
 
+    public static <T> R<T> success(T data) {
+        return new R<T>(200, "success", data);
+    }
+
+    public static <T> R<T> error() {
+        return new R<T>(500, "error");
+    }
+
+    public static <T> R<T> error(String message) {
+        return new R<T>(500, message);
+    }
+
+    public static <T> R<T> error(int code, String message) {
+        return new R<T>(code, message);
+    }
 }

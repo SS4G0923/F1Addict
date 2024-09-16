@@ -1,7 +1,7 @@
 package com.f1addict.f1addictbackend.Service.Impl;
 
 import com.alibaba.fastjson.JSON;
-import com.f1addict.f1addictbackend.Entity.Driver;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.f1addict.f1addictbackend.Entity.Schedule;
 import com.f1addict.f1addictbackend.Mapper.ScheduleMapper;
 import com.f1addict.f1addictbackend.Service.ScheduleService;
@@ -17,7 +17,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class ScheduleServiceImpl implements ScheduleService {
+public class ScheduleServiceImpl extends ServiceImpl<ScheduleMapper, Schedule> implements ScheduleService {
 
     @Autowired
     ScheduleMapper scheduleMapper;
@@ -34,7 +34,7 @@ public class ScheduleServiceImpl implements ScheduleService {
         }
 
         if(scheduleString == null){
-            list = scheduleMapper.getSchedule();
+            list = scheduleMapper.selectList(null);
             redisTemplate.opsForValue().set("schedule", JSON.toJSONString(list), 3600L, java.util.concurrent.TimeUnit.SECONDS);
             log.info("get schedule from mysql");
         }

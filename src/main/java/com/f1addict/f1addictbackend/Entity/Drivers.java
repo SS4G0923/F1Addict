@@ -3,7 +3,7 @@ package com.f1addict.f1addictbackend.Entity;
 import lombok.Data;
 
 @Data
-public class Driver {
+public class Drivers {
     int standing;
     int no;
     String firstName;

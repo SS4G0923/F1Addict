@@ -1,12 +1,12 @@
 package com.f1addict.f1addictbackend.Service.Impl;
 
 import com.alibaba.fastjson.JSON;
-import com.f1addict.f1addictbackend.Entity.Team;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.f1addict.f1addictbackend.Entity.Teams;
 import com.f1addict.f1addictbackend.Mapper.TeamMapper;
 import com.f1addict.f1addictbackend.Service.TeamService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.tomcat.util.json.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class TeamServiceImpl implements TeamService {
+public class TeamServiceImpl extends ServiceImpl<TeamMapper, Teams> implements TeamService {
 
     @Autowired
     TeamMapper teamMapper;
@@ -23,27 +23,27 @@ public class TeamServiceImpl implements TeamService {
     @Resource
     RedisTemplate<String, String> redisTemplate;
 
-    public List<Team> selectAll() {
+    public List<Teams> selectAll() {
 
         int i = 1;
         String teamListString = redisTemplate.opsForValue().get("teamList");
-        List<Team> teamList = null;
+        List<Teams> teamsList = null;
         if(teamListString != null){
-            teamList = JSON.parseArray(teamListString, Team.class);
+            teamsList = JSON.parseArray(teamListString, Teams.class);
             log.info("get teamList from redis");
         }
 
         if(teamListString == null){
-            teamList = teamMapper.getTeamList();
-            redisTemplate.opsForValue().set("teamList", JSON.toJSONString(teamList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
+            teamsList = teamMapper.selectList(null);
+            redisTemplate.opsForValue().set("teamList", JSON.toJSONString(teamsList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
             log.info("get teamList from mysql");
         }
 
 
-        for(Team team : teamList){
-            team.setStanding(i++);
+        for(Teams teams : teamsList){
+            teams.setStanding(i++);
         }
 
-        return teamList;
+        return teamsList;
     }
 }

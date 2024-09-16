@@ -5,7 +5,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class User {
+public class UserAuth {
     String email;
     String username;
     String password;

@@ -1,10 +1,11 @@
 package com.f1addict.f1addictbackend.Service;
 
-import com.f1addict.f1addictbackend.Entity.Team;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.f1addict.f1addictbackend.Entity.Teams;
 
 import java.util.List;
 
-public interface TeamService {
+public interface TeamService extends IService<Teams> {
 
-    public List<Team> selectAll();
+    List<Teams> selectAll();
 }
