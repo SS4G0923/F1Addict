@@ -1,0 +1,61 @@
+.banner {
+    background-color: #15151E;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.f1img {
+    height: 35px;
+    margin: 33px 50px;
+    position: absolute;
+}
+
+    
+.dashboardBannerContent {
+    padding-top: 35px;
+    padding-left: 15%;
+    position: absolute;
+}
+
+.dashboardBannerList {
+    border-left: 4px solid grey;
+    padding-left: 25px;
+}
+    
+.dashboardBannerList>li>p {
+    font-size: xx-large;
+    color: white;
+    font-family: Formula1;
+}
+
+.bannerButton {
+    background-color: red;
+    border-radius: 10px;
+    border: 0px solid black;
+    font-size: 17px;
+    font-family: Formula1;
+    color: white;
+    height: 45px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+div[name="user"] { 
+    position: absolute;
+    display: flex;
+    padding-top: 28px;
+    margin-left: 80%;
+}
+
+div[name="user"]>a:nth-child(2)>button {
+    background-color: black;
+}
+div[name="f1img"]>a{
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 15%;
+    z-index: 2;
+}
