@@ -1,0 +1,33 @@
+.dashboardWrapper {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #15151E;
+    display: flex;
+    width: 10%;
+    height: 100vh;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 40px; 
+}
+
+.sidebar ul li {
+    color: white;
+    font-family: 'Formula1';
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border-bottom: 3px solid transparent;
+}
+
+.sidebar ul li:hover {
+    border-bottom: 3px solid red;
+    transition: 0.3s;
+}
+
