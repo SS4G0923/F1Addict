@@ -1,7 +1,9 @@
 package com.f1addict.f1addictbackend.Service.Impl;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.f1addict.f1addictbackend.Common.R;
 import com.f1addict.f1addictbackend.Entity.Drivers;
 import com.f1addict.f1addictbackend.Mapper.DriversMapper;
 import com.f1addict.f1addictbackend.Service.DriversService;
@@ -42,5 +44,18 @@ public class DriversServiceImpl extends ServiceImpl<DriversMapper, Drivers> impl
                 drivers.setStanding(i++);
             }
             return driversList;
+        }
+
+        @Override
+        public R<String> updateDriver(Drivers drivers) {
+            LambdaQueryWrapper<Drivers> lqw = new LambdaQueryWrapper<>();
+            lqw = lqw.eq(Drivers::getNo, drivers.getNo());
+            Drivers retDrivers = driversMapper.selectOne(lqw);
+            if(retDrivers == null){
+                return R.error(404, "未找到该车手");
+            }
+            driversMapper.update(drivers, lqw);
+            redisTemplate.delete("driverList");
+            return R.success("更新成功");
         }
 }

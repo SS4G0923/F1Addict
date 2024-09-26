@@ -23,4 +23,9 @@ public class DriversController {
         List<Drivers> list = driversService.selectAll();
         return R.success(list);
     }
+
+    @PostMapping("/update")
+    public R<String> update(@RequestBody Drivers drivers){
+        return driversService.updateDriver(drivers);
+    }
 }
