@@ -35,7 +35,9 @@ public class DriversServiceImpl extends ServiceImpl<DriversMapper, Drivers> impl
             }
 
             if(driverListString == null){
-                driversList = driversMapper.selectList(null);
+                LambdaQueryWrapper<Drivers> lqw = new LambdaQueryWrapper<>();
+                lqw.orderByDesc(Drivers::getPoints);
+                driversList = driversMapper.selectList(lqw);
                 redisTemplate.opsForValue().set("driverList", JSON.toJSONString(driversList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
                 log.info("get driverList from mysql");
             }
