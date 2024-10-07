@@ -7,6 +7,7 @@ import Register from './register';
 import Dashboard from './dashboard';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DashboardDrivers from './dashboardDrivers';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/drivers" element={<DashboardDrivers />} />
       </Routes>
     </Router>
   )
