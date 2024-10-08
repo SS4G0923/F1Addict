@@ -1,7 +1,10 @@
 package com.f1addict.f1addictbackend.Service.Impl;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.f1addict.f1addictbackend.Common.R;
+import com.f1addict.f1addictbackend.Entity.Drivers;
 import com.f1addict.f1addictbackend.Entity.Teams;
 import com.f1addict.f1addictbackend.Mapper.TeamMapper;
 import com.f1addict.f1addictbackend.Service.TeamService;
@@ -45,5 +48,18 @@ public class TeamServiceImpl extends ServiceImpl<TeamMapper, Teams> implements T
         }
 
         return teamsList;
+    }
+
+    @Override
+    public R<String> updateTeam(Teams team) {
+        LambdaQueryWrapper<Teams> lqw = new LambdaQueryWrapper<>();
+        lqw = lqw.eq(Teams::getName, team.getName());
+        Teams retTeams = teamMapper.selectOne(lqw);
+        if(retTeams == null){
+            return R.error(404, "未找到该车队");
+        }
+        teamMapper.update(team, lqw);
+        redisTemplate.delete("teamsList");
+        return R.success("更新成功");
     }
 }
