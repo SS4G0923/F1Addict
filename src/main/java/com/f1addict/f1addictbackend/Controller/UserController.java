@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/auth")
 @CrossOrigin("*")
 public class UserController {
 
     @Autowired
     UserService userService;
 
-    @PostMapping("/add")
+    @PostMapping("/register")
     public R<String> addUser(@RequestBody UserAuth userAuth){
         UserAuth userAuthByEmail = userService.getUserByEmail(userAuth.getEmail());
         if(userAuthByEmail != null){
@@ -24,7 +24,7 @@ public class UserController {
         return R.success("注册成功");
     }
 
-    @PostMapping("/get")
+    @PostMapping("/login")
     public R<String> getUserByEmailAndPassword(@RequestBody UserAuth userAuth){
         return userService.login(userAuth);
     }
