@@ -56,8 +56,8 @@ public class DriversServiceImpl extends ServiceImpl<DriversMapper, Drivers> impl
             if(retDrivers == null){
                 return R.error(404, "未找到该车手");
             }
-            driversMapper.update(drivers, lqw);
             redisTemplate.delete("driverList");
+            driversMapper.update(drivers, lqw);
             return R.success("更新成功");
         }
 }
