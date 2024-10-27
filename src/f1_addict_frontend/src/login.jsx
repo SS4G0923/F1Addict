@@ -18,7 +18,7 @@ export default function Login() {
             return;
         }
         const user = {'email': email, 'password': password};
-        const res = await axios.post("http://localhost:7070/user/get", user);
+        const res = await axios.post("http://localhost:7070/auth/login", user);
         if(res.data.code !== 200){
             alert(res.data.msg);
             return;

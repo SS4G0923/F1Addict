@@ -25,7 +25,7 @@ export default function Register(){
             return;
         }
         const user = {'email': email, 'username': username, 'password': password};
-        const res = await axios.post('http://localhost:7070/user/add', user);
+        const res = await axios.post('http://localhost:7070/auth/register', user);
         if(res.data.code === 0){
             alert(res.data.msg);
             return;
