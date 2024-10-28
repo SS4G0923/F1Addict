@@ -19,6 +19,9 @@
     border-bottom: 2px solid grey;
     margin-bottom: 40px;
     position: relative;
+    padding-left: 30px; 
+    padding-right: 50px;
+    padding-top: 10px;
 }
 
 .dbDriverStanding{
@@ -44,4 +47,23 @@
     height: 40px;
     margin-right: 10px;
     margin-bottom: -8px
+}
+
+.dashboardDriverWrapper ul li{
+    display: flex;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px red solid;
+    background-color: #f1f1f1;
+    font-family: 'Formula1';
+    font-size: large;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+button:hover{
+    background-color: lightgrey;
 }

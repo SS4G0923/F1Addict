@@ -21,6 +21,15 @@ export default function DashboardDrivers() {
         getDrivers();
     }, []);
 
+
+    const update_driver = async(no, points) => {
+        const res = await axios.post('http://localhost:7070/driver/update', {no: no, points: points});
+        if(res.data.code === 200){
+            alert(res.data.msg);
+            getDrivers();
+        }
+    }
+
     return(
         <>
             <DashboardBanner/>
@@ -36,6 +45,7 @@ export default function DashboardDrivers() {
                     <ul>
                         {
                             drivers.map((driver) => (
+                                
                                 <li key={driver.id}>
                                     <div className='dashboardDriverItem'>
                                         <div className='dbDriverStanding'>
@@ -54,6 +64,9 @@ export default function DashboardDrivers() {
                                         <div className='dbDriverPoints'>
                                             { driver.points }
                                         </div>
+                                    </div>
+                                    <div>
+                                        <button onClick={()=>update_driver(driver.no, driver.points)}>Edit</button>
                                     </div>
                                 </li>
                             ))
