@@ -37,7 +37,9 @@ public class TeamServiceImpl extends ServiceImpl<TeamMapper, Teams> implements T
         }
 
         if(teamListString == null){
-            teamsList = teamMapper.selectList(null);
+            LambdaQueryWrapper<Teams> lqw = new LambdaQueryWrapper<>();
+            lqw.orderByDesc(Teams::getPoints);
+            teamsList = teamMapper.selectList(lqw);
             redisTemplate.opsForValue().set("teamList", JSON.toJSONString(teamsList), 3600L, java.util.concurrent.TimeUnit.SECONDS);
             log.info("get teamList from mysql");
         }
@@ -58,8 +60,8 @@ public class TeamServiceImpl extends ServiceImpl<TeamMapper, Teams> implements T
         if(retTeams == null){
             return R.error(404, "未找到该车队");
         }
+        redisTemplate.delete("teamList");
         teamMapper.update(team, lqw);
-        redisTemplate.delete("teamsList");
         return R.success("更新成功");
     }
 }
