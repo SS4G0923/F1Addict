@@ -5,9 +5,9 @@ export default function DashboardSidebar(){
     return(
         <div className="sidebar">
             <ul>
-                <li><Link to="teams" style={{textDecoration: 'none', color: 'white'}}>Teams</Link></li>
-                <li><Link to="drivers" style={{textDecoration: 'none', color: 'white'}}>Drivers</Link></li>
-                <li><Link to="articles" style={{textDecoration: 'none', color: 'white'}}>Articles</Link></li>
+                <li><Link to="/dashboard/teams" style={{textDecoration: 'none', color: 'white'}}>Teams</Link></li>
+                <li><Link to="/dashboard/drivers" style={{textDecoration: 'none', color: 'white'}}>Drivers</Link></li>
+                <li><Link to="/dashboard/articles" style={{textDecoration: 'none', color: 'white'}}>Articles</Link></li>
             </ul>
         </div>
     )
