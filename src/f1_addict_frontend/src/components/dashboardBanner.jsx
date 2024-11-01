@@ -19,7 +19,7 @@ export default function DashboardBanner() {
         <>
             <div name="banner" className="banner">
                 <div name="f1img">
-                    <a href="/home"><img src={F1_img} className="f1img"/></a>
+                    <a href="/dashboard"><img src={F1_img} className="f1img"/></a>
                 </div>
                 <div className="dashboardBannerContent">
                     <ul className="dashboardBannerList"> 
