@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import BannerDetail from './bannerDetail';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import F1_img from '../assets/images/F1.svg.png';
 import './banner.css';
@@ -10,6 +11,7 @@ export default function Banner({isShowScheduleFromParent}) {
     let username = localStorage.getItem('username') ? localStorage.getItem('username').toUpperCase() : '';
 
     const [isShowSchedule, setIsShowSchedule] = useState(isShowScheduleFromParent);
+    const [schedule, setSchedule] = useState([]);
     const [isShow] = useState(username.trim() !== '');
 
     const logout = () => {
@@ -17,6 +19,15 @@ export default function Banner({isShowScheduleFromParent}) {
         localStorage.removeItem('token');
         window.location.href = '/login';
     }
+
+    const getSchedule = async () => {
+        const res = await axios.get("http://localhost:7070/schedule");
+        setSchedule(res.data.data);
+    }
+
+    useEffect(() => {
+        getSchedule();
+    }, []);
     
     return(
         <>
@@ -47,12 +58,12 @@ export default function Banner({isShowScheduleFromParent}) {
                     </div>
                 ) : (
                     <div name="user">
-                        <button className="bannerButton"><Link to="/login" style={{color: 'white'}}>Log in</Link></button>
-                        <button className="bannerButton"><Link to="/register" style={{color: 'white'}}>Sign up</Link></button>   
+                        <button className="bannerButton"><Link to="/login">Log in</Link></button>
+                        <button className="bannerButton"><Link to="/register">Sign up</Link></button>   
                     </div>
                 )}
             </div>
-            <BannerDetail isShowSchedule={isShowSchedule}/>
+            <BannerDetail isShowSchedule={isShowSchedule} schedule={schedule}/>
         </>
     )
 }
