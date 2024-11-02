@@ -29,6 +29,8 @@ export default function DashboardDrivers() {
         }
     }
 
+    document.title = 'F1Addict - Driver Dashboard';
+
     return(
         <>
             <DashboardBanner/>

@@ -37,6 +37,8 @@ export default function DashboardTeams() {
         }
     }
 
+    document.title = 'F1Addict - Teams Dashboard';
+
     return(
         <>
             <DashboardBanner/>
