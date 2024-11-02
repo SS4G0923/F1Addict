@@ -56,4 +56,12 @@
     font-weight: 300;
     font-size: large;
     border-radius: 10px;
+    border-color: black;
+}
+
+.registerSubmitButton input:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
 }

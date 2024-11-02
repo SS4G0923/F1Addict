@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Banner from './components/banner'
 import Footer from './components/footer'
 import './register.css'
+import { message } from 'antd'
 
 export default function Register(){
 
@@ -16,22 +17,22 @@ export default function Register(){
 
     const signup = async (email, username, password) => {
         if(email.trim() === '' || password.trim() === '' || username.trim() === ''){
-            alert('Please enter username, email and password');
+            message.warning('Please enter email, username and password');
             return;
         }
         const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if(!reg.test(email)){
-            alert('Please enter a valid email address');
+            message.warning('Please enter a valid email address');
             return;
         }
         const user = {'email': email, 'username': username, 'password': password};
         const res = await axios.post('http://localhost:7070/auth/register', user);
         if(res.data.code === 0){
-            alert(res.data.msg);
+            message.success('Signup successfully');
             return;
         }
         else if (res.data.code === 1){
-            alert(res.data.msg);   
+            message.error(res.data.message);   
             navigate('/login')
             return;
         }

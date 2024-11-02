@@ -43,3 +43,10 @@
     font-size: large;
     border-radius: 10px;
 }
+
+.submitButton input:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}

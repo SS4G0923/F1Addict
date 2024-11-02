@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Banner from './components/banner';
 import Footer from './components/footer';
 import { useState } from 'react';
+import { message } from 'antd';
 import './login.css';
 
 export default function Login() {
@@ -14,17 +15,22 @@ export default function Login() {
 
     const loginApi = async(email, password) => {
         if(email.trim() === '' || password.trim() === ''){
-            alert('Please enter username and password');
+            message.warning('Please enter username and password');
+            return;
+        }
+        const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!reg.test(email)){
+            message.warning('Please enter a valid email address');
             return;
         }
         const user = {'email': email, 'password': password};
         const res = await axios.post("http://localhost:7070/auth/login", user);
         if(res.data.code !== 200){
-            alert(res.data.msg);
+            message.error(res.data.message);
             return;
         }
         else if(res.data.code === 200){
-            alert("登录成功");
+            message.success('Login successfully');
             localStorage.setItem('username', res.data.data.username);
             localStorage.setItem('token', res.data.data.token);
             navigate('/home');
