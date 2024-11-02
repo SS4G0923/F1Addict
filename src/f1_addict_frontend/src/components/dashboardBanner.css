@@ -42,6 +42,11 @@
     margin-left: 10px;
 }
 
+.bannerButton:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
 div[name="user"] { 
     position: absolute;
     display: flex;
@@ -49,9 +54,6 @@ div[name="user"] {
     margin-left: 80%;
 }
 
-div[name="user"]>a:nth-child(2)>button {
-    background-color: black;
-}
 div[name="f1img"]>a{
     position: absolute;
     display: block;

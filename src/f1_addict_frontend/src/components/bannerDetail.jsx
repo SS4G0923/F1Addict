@@ -2,13 +2,13 @@ import { Transition } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import ScheduleDetail from './bannerDetail/scheduleDetail';
 
-export default function BannerDetail({isShowSchedule}) {
+export default function BannerDetail({isShowSchedule, schedule}) {
     return(
         <>
             <div className="bannerDetail" style={{position: 'relative', zIndex: 1}}>
                 {isShowSchedule && (
-                    <Transition timeout={500}>
-                        <ScheduleDetail/>
+                    <Transition in={true} timeout={500}>
+                        <ScheduleDetail schedule={schedule}/>
                     </Transition>
                 )}
             </div>
@@ -19,4 +19,5 @@ export default function BannerDetail({isShowSchedule}) {
 
 BannerDetail.propTypes = {
     isShowSchedule: PropTypes.bool.isRequired,
+    schedule: PropTypes.array.isRequired
 };
